@@ -1,0 +1,22 @@
+{
+  "name": "node_app",
+  "version": "0.0.0",
+  "description": "node server for socket.io",
+  "main": "server.js",
+  "dependencies": {
+    "backbone": "~0.9.10",
+    "socket.io": "~0.9.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dev@5emegauche.com:git/arduino_socket_node.git"
+  },
+  "author": "romaindr",
+  "license": "BSD",
+  "gitHead": "f62d5b8ee6e258b3d79fb1a1b2ec66dcacd87265"
+}
