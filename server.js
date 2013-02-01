@@ -43,6 +43,6 @@ io.sockets.on('connection', function(socket){
     }
   });
 });
-app.listen(port);
+app.listen(80);
 console.log('Listening on ' + port );
 
