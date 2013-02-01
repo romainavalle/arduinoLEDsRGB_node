@@ -9,11 +9,11 @@ var io = require('socket.io'),
 
 io = io.listen(app);
 
-io.configure(function () { 
-  io.set("transports", ["xhr-polling"]); 
+io.configure(function () {
+  io.set("transports", ["xhr-polling"]);
   io.set("polling duration", 10);
   io.set("close timeout", 10);
-  io.set("log level", 1); 
+  io.set("log level", 1);
 });
 
 var shootCollection = new ShootCollection();
@@ -40,13 +40,10 @@ function checkShoot(){
 }
 io.sockets.on('connection', function(socket){
   socket.on(canal, function(data){
-    switch(data.type)
-    {
-      case 'shoot':
-        var shoot = new Shoot({color: data.color});
-        if(_.size(shootCollection) == 256)shootCollection.shift();
-        shootCollection.add(shoot);
-      break;
+    if(data.type == 'shoot'){
+      var shoot = new Shoot({color: data.color});
+      if(_.size(shootCollection) == 256)shootCollection.shift();
+      shootCollection.add(shoot);
     }
   });
 });
