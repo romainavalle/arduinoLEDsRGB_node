@@ -42,7 +42,7 @@ io.sockets.on('connection', function(socket){
   socket.on(canal, function(data){
     if(data.type == 'shoot'){
       var shoot = new Shoot({color: data.color});
-      if(_.size(shootCollection) == 256)shootCollection.shift();
+      if(_.size(shootCollection) == 20)shootCollection.shift();
       shootCollection.add(shoot);
     }
   });
