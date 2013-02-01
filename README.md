@@ -13,11 +13,11 @@ I use backbone ONLY for fun. It would be a simple array.
 
 ## Arduino parts
 
-You can check the arduino app #### [here](https://github.com/romaindr/arduinoLEDsRGB_arduino)
+You can check the arduino app [here](https://github.com/romaindr/arduinoLEDsRGB_arduino)
 
 ## Web parts
 
-You can check the web app #### [here](https://github.com/romaindr/arduinoLEDsRGB_web)
+You can check the web app [here](https://github.com/romaindr/arduinoLEDsRGB_web)
 
 
 ###You may want to check these links...
