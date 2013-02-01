@@ -9,6 +9,13 @@ var io = require('socket.io'),
 
 io = io.listen(app);
 
+io.configure(function () { 
+  io.set("transports", ["xhr-polling"]); 
+  io.set("polling duration", 10);
+  io.set("close timeout", 10);
+  io.set("log level", 1); 
+});
+
 var shootCollection = new ShootCollection();
 shootCollection.on('add',checkShoot);
 
